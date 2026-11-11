@@ -14,6 +14,7 @@ El proyecto se desarrolla con Python y forma parte de mi aprendizaje práctico e
 - Aprender a limpiar, transformar y analizar datos con Python.
 - Estudiar la distribución de diferentes indicadores microbiológicos.
 - Identificar patrones geográficos y temporales.
+- Comparar los resultados entre indicadores y tipos de masas de agua.
 - Representar los resultados mediante gráficos y mapas interactivos.
 - Crear un dashboard con Streamlit para consultar los datos de forma sencilla.
 - Publicarlo en Streamlit Cloud Community.
@@ -24,23 +25,27 @@ El proyecto se desarrolla con Python y forma parte de mi aprendizaje práctico e
 
 **Ámbito geográfico:** España.
 
-**Periodo:** 1995–2025.
+**Periodo disponible:** 18/02/2013 – 20/07/2015.
+
+**Número de registros:** 100.000.
 
 **Indicadores microbiológicos:**
 - E. coli.
 - Enterococci.
-- Fecal coliform.
-- Total coliform.
 
-**Tipos de masas de agua:** 
-- Ríos y arroyos (Rivers and streams): cursos naturales de agua en movimiento.
-- Lagos (Lakes): masas de agua continentales, generalmente rodeadas de tierra.
-- Embalses (Reservoirs): masas de agua almacenadas artificialmente mediante presas u otras infraestructuras.
-- Estuarios (Estuaries): zonas de transición donde el agua dulce de los ríos se mezcla con el agua del mar.
-- Aguas costeras (Coastal waters): aguas marinas próximas a la costa.
-- Aguas marinas (Marine waters): aguas del mar alejadas de la zona costera.
-- Aguas subterráneas (Groundwater): aguas que se encuentran bajo la superficie terrestre.
-- Otros (Other): registros que no se pueden asignar claramente a las categorías anteriores o que utilizan una clasificación diferente.
+**Tipos de masas de agua presentes en la descarga:**
+
+- **Ríos y arroyos (river/stream):** cursos naturales de agua en movimiento.
+- **Estuarios (estuary):** zonas de transición donde el agua dulce de los ríos se mezcla con el agua del mar.
+- **Lagos (lake):** masas de agua continentales rodeadas de tierra.
+- **Otros (other):** registros clasificados bajo esta categoría en la fuente original.
+
+Los datos se han descargado en dos formatos:
+
+- **CSV:** para el análisis y la manipulación de los datos.
+- **GeoJSON:** para trabajar con la información geográfica y crear mapas interactivos.
+
+**Nota sobre los datos:** la exportación está limitada a 100.000 registros (`capped: true`). Por tanto, el conjunto descargado puede no contener todas las observaciones disponibles en Open Water Quality. El análisis se realizará exclusivamente sobre los registros incluidos en los archivos descargados.
 
 ## 4. Preguntas que se investigarán
 
@@ -50,8 +55,10 @@ Durante el análisis se intentará responder a las siguientes preguntas:
 - ¿Cómo se distribuyen geográficamente las muestras?
 - ¿Cómo han evolucionado los registros a lo largo del tiempo?
 - ¿Existen diferencias entre los distintos tipos de masas de agua?
-- ¿Qué diferencias existen entre los niveles registrados de los distintos indicadores microbiológicos?
+- ¿Qué diferencias existen entre los niveles registrados de E. coli y Enterococci?
 - ¿Qué diferencias se observan entre las regiones de España en los resultados de los análisis microbiológicos?
+
+Estas preguntas servirán como guía. Las conclusiones dependerán de la cantidad, distribución y calidad de los datos disponibles.
 
 ## 5. Herramientas
 
@@ -87,19 +94,21 @@ A partir de esa selección, se mostrarán los registros correspondientes, incluy
 
 ## 8. Limitaciones
 
-- La disponibilidad de datos puede variar según la región, el periodo y el indicador.
+- El conjunto de datos descargado contiene registros correspondientes al periodo comprendido entre 2013 y 2015.
+- La exportación está limitada a 100.000 registros, por lo que puede no representar la totalidad de los datos disponibles en la fuente.
 - La cobertura geográfica y temporal puede ser desigual.
+- La distribución de los registros entre indicadores y tipos de masas de agua puede limitar algunas comparaciones.
 - Los resultados dependen de la calidad y de los métodos utilizados por las distintas fuentes.
 - La presencia de valores elevados no permite, por sí sola, establecer conclusiones sobre la seguridad sanitaria del agua.
 - Este proyecto tiene una finalidad educativa y de aprendizaje. No constituye una evaluación sanitaria oficial ni sustituye los controles de las autoridades competentes.
 
 ## 9. Autor
 
-Erika Pinel Ortega 👽
+**Erika Pinel Ortega** 👽
 
 - GitHub: [@eripinor](https://github.com/eripinor)
 - LinkedIn: [erika-pinel](https://www.linkedin.com/in/erika-pinel/)
 
 ## 10. Estado del proyecto
 
-⚠️Proyecto en desarrollo.
+⚠️ Proyecto en desarrollo.
