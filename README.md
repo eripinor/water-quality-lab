@@ -47,18 +47,31 @@ Los datos se han descargado en dos formatos:
 
 **Nota sobre los datos:** la exportación está limitada a 100.000 registros (`capped: true`). Por tanto, el conjunto descargado puede no contener todas las observaciones disponibles en Open Water Quality. El análisis se realizará exclusivamente sobre los registros incluidos en los archivos descargados.
 
-## 4. Preguntas que se investigarán
+## 4. Preguntas que se han investigado
 
-Durante el análisis se intentará responder a las siguientes preguntas:
+**1. ¿Qué indicadores microbiológicos aparecen con mayor frecuencia?**
 
-- ¿Qué indicadores microbiológicos aparecen con mayor frecuencia?
-- ¿Cómo se distribuyen geográficamente las muestras?
-- ¿Cómo han evolucionado los registros a lo largo del tiempo?
-- ¿Existen diferencias entre los distintos tipos de masas de agua?
-- ¿Qué diferencias existen entre los niveles registrados de E. coli y Enterococci?
-- ¿Qué diferencias se observan entre las regiones de España en los resultados de los análisis microbiológicos?
+Los dos indicadores tienen una representación prácticamente equilibrada. E. coli cuenta con 50.325 registros (50,33 %), mientras que Enterococci tiene 49.675 (49,68 %). La diferencia es de solo 650 muestras.
 
-Estas preguntas servirán como guía. Las conclusiones dependerán de la cantidad, distribución y calidad de los datos disponibles.
+**2. ¿Cómo se distribuyen geográficamente las muestras?**
+
+La representación de una muestra aleatoria de 10.000 registros muestra que existen mediciones en la península ibérica y en los archipiélagos. Sin embargo, la distribución geográfica no es uniforme: se observan zonas con mayor concentración de muestras y otras con menor presencia de registros.
+
+**3. ¿Cómo han evolucionado los registros a lo largo del tiempo?**
+
+En 2013 se registraron 39.746 muestras (39,75 %), y en 2014, 40.464 (40,46 %). En 2015 la cifra desciende a 19.790 (19,79 %). Esta diferencia debe interpretarse teniendo en cuenta que los datos de 2015 solo llegan hasta el 20 de julio.
+
+**4. ¿Existen diferencias entre los distintos tipos de masas de agua?**
+
+La categoría `other` concentra 87.207 muestras (87,21 %). Las demás categorías tienen una representación mucho menor: `river/stream` cuenta con 4.785 (4,79 %), `estuary` con 4.633 (4,63 %) y `lake` con 3.375 (3,38 %). Esta distribución desigual debe tenerse en cuenta al comparar los grupos.
+
+**5. ¿Qué diferencias existen entre los niveles registrados de E. coli y Enterococci?**
+
+La mediana de E. coli es de 6 CFU/100mL, mientras que la de Enterococci es de 5 CFU/100mL. La diferencia es pequeña, por lo que los valores centrales de ambos indicadores son similares.
+
+**6. ¿Qué diferencias se observan entre las regiones de España en los resultados de los análisis microbiológicos?**
+
+No ha sido posible realizar esta comparación porque la columna `region` contiene únicamente el valor Spain en los 100.000 registros. Por tanto, el conjunto de datos no permite distinguir entre regiones españolas.
 
 ## 5. Herramientas
 
@@ -111,4 +124,6 @@ A partir de esa selección, se mostrarán los registros correspondientes, incluy
 
 ## 10. Estado del proyecto
 
-⚠️ Proyecto en desarrollo.
+⚠️PROYECTO EN DESARROLLO⚠️
+1. EDA terminado.
+2. Aplicación de Streamlit en proceso.

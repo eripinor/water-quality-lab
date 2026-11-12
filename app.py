@@ -1,7 +1,5 @@
 # La app de mi proyecto
 # Para verla, en la terminal: streamlit run app.py
-# Son los mismos pasos que en app_pisos.py y app_titanic.py. Si te atascas, busca el mismo paso allí.
-
 
 
 # Paso 1. La página
