@@ -187,7 +187,7 @@ Este proyecto tiene una finalidad educativa y de aprendizaje. No constituye una 
 
 La aplicación **Microbial Water Monitor** está publicada en **Streamlit Community Cloud** y puede consultarse a través del siguiente enlace:
 
-**Aplicación:** [Abrir Microbial Water Monitor](PEGAR_AQUÍ_EL_ENLACE_DE_STREAMLIT)
+**Aplicación:** [Abrir Microbial Water Monitor](https://microbial-water-monitor.streamlit.app/)
 
 La publicación permite acceder al dashboard interactivo y explorar los datos sin necesidad de instalar Python ni ejecutar el proyecto localmente.
 
