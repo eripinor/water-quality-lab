@@ -7,7 +7,12 @@
 # 1.2 Pon el nombre de la pestaña del navegador, la página a todo lo ancho y un título que diga de qué va tu proyecto.
 # 1.3 Debajo, una o dos frases con st.write: qué pregunta responde la app y de dónde salen los datos.
 
+import streamlit as st
+import pandas as pd
 
+st.set_page_config(
+    page_title="MICROBIAL WATER MONITOR: Análisis de indicadores microbiológicos en masas de agua de España"
+)
 
 # Paso 2. Los datos
 # 2.1 La función cargar_datos, con @st.cache_data encima, que lea "datos/datos_limpios.csv" y lo devuelva.
